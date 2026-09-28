@@ -1,0 +1,758 @@
+ *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 60px;
+            position: fixed;
+            top: 0;
+            background-color: rgb(252, 248, 243);
+        }
+        .nav-img{
+            width: 300px;
+        }
+        .nav-btn{
+            display: flex;
+            gap: 35px; 
+            justify-content: space-around;
+            padding: 0px 50px;
+        }
+        .nav-bar{
+            display: none;
+        }
+        .nav-btn a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            padding: 5px 15px;
+        }
+        .nav-btn a:hover{
+            background-color: blue;
+            border-radius: 15px;
+            color: whitesmoke;
+        }
+        .home{
+            width: 100%;
+            display: flex;
+            margin-top: 100px;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            background-color: rgb(241, 244, 244);
+        }
+        .home-left{
+           width: 50%;
+           padding: 150px 0px 100px 150px;
+        }
+        .home-left h1{
+            color: blue;
+            font-size: 58px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home-left h2{
+            font-size: 45px;
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home-left p{
+            padding: 30px 0px;
+            font-size: 19px;
+            color: #555555;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home-left button{
+            padding: 30px 70px;
+            background-color: blue;
+            border: none;
+            border-radius: 35px ;
+            color: aliceblue;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .home-right{
+            width: 50%;
+            margin-left: 100px;
+        }
+        .home-right img{
+            width: 700px;
+            margin-top: 100px;
+            /* opacity: 1; */
+        }
+        .icons{
+            width: 100%;
+            padding: 80px 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .icons img{
+            width: 250px;
+        } 
+        .DA-con{
+            width: 100%;
+            display: flex;
+            background-color: rgb(241, 244, 244);
+            padding-bottom: 50px;
+        }
+        .DA-con-left{
+            padding: 100px 0px 100px 100px;
+        }
+        .DA-con-left img{
+            width: 650px;
+        }
+        .DA-con-right{
+            width: 50%;
+            padding: 100px 100px 50px 0px;
+        }
+        .DA-con-right .DA-2{
+            margin-left: 50px;
+        }
+        .DA-1{
+            width: 650px;
+            border-radius: 25px;
+            padding: 5px;
+        }
+        .DA-1 h1{
+            font-size: 49px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .DA-1 p{
+            font-size: 23px;
+            padding-top: 20px;
+            font-weight: lighter;
+            color: #555555;
+        }
+        .DA-2{
+            width: 600px;
+            background-color: rgb(240, 248, 245);
+            border-radius: 25px;
+            padding: 40px 10px;
+            margin-top: 30px;
+        }
+        .DA-21{
+            display: flex;
+            justify-content: space-between;
+        }
+        .DA-21 h1{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .DA-21 h2{
+            font-size: 30px;
+        }
+        .DA-22 p{
+            font-size: 20px;
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            color: #555555;
+        }
+        .DA-con-right button{
+            padding: 20px 50px;
+            border-radius: 30px;
+            background-color: blue;
+            border: none;
+            color: rgb(249, 251, 253);
+            margin-top: 15px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .our-service{
+            width: 100%;
+            background-color: rgb(230, 235, 235);
+            padding: 100px 0px;
+        }
+        .our-1{
+            padding: 20px;
+        }
+        .our-1 h1{
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .our-1 p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            color: #555555;
+        }
+        .our-2{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+        .our-21{
+            width: 300px;
+            height: 180px;
+            background-color: rgb(246, 245, 243);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+        .our-21 h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .our-21 p{
+            text-align: center;
+            font-size: 17px;
+            font-weight:lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #555555;
+        }
+        .our-3{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .our-3 button{
+            padding: 20px 50px;
+            background-color: blue;
+            border: none;
+            color: aliceblue;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+        .Happy{
+            display: flex;
+            padding: 130px 50px;
+        }
+        .Happy-left{
+            width: 50%;
+            padding: 50px 70px;
+        }
+        .Happy-left1 h1{
+            font-size: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Happy-left1 p{
+            font-size: 23px;
+            font-weight:lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            color: #555555;
+        }
+        .Happy-left2{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+            gap: 100px;
+        }
+        .Happy-right img{
+            width: 650px;
+        }
+        .Happy-card{
+            width: 200px; 
+            background-color: rgb(252, 249, 246);
+            border-radius: 20px;
+            padding: 15px;
+        }
+        .Happy-card h5{
+            font-size: 70px;
+        }
+        .Happy-card h1{
+            font-size: 50px;
+        }
+        .Happy-card p{
+            font-size: 30px;
+            color: #555555;
+        }
+        .Work{
+            background-color: rgb(230, 235, 235);
+            padding-top: 100px;
+        }
+        .Work-top h1{
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 15px;
+            font-weight:lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Work-top p{
+            text-align: center;
+            font-size: 20px;
+            font-weight:lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #555555;
+        }
+        .Work-bottom{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-evenly;
+            padding: 80px;
+        }
+        .John{
+            padding: 100px 0px;
+            background-color: rgb(214, 216, 218);
+        }
+        .John-top h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight:lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        .John-top img{
+            width: 150px;
+            margin-left: 45%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .John-top p{
+            text-align: center;
+            font-size: 25px;
+            font-weight:lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #555555;
+        }
+        .John-top h2{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 25px;
+        }
+        .John-top h5{
+            text-align: center;
+            margin-top: 3px;
+            font-size: 15px;
+            color: #555555;
+        }
+        .John-bottom{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 40px;
+        }
+        .John-bottom p{
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+        .project{
+            display: flex;
+        }
+        .project-left{
+            width: 60%;
+            padding: 150px 170px;
+        }
+        .project-left h1{
+            font-size: 45px;
+            padding-bottom: 30px;
+        }
+        .project-left p{
+            font-size: 24px;
+            padding: 10px;
+            color: #555555;
+        }
+        .project-right{
+            display: flex;
+            align-items: center;
+        }
+        .project-right button{
+            color: rgb(248, 249, 250);
+            font-weight: bold;
+            background-color: blue;
+            border: none;
+            padding: 30px 50px;
+            border-radius: 40px;
+        }
+        .pricing{
+            background-color: azure;
+            display: flex;
+            padding: 50px;
+        }
+        .pricing-left{
+            width: 50%;
+            padding: 100px 100px;
+        }
+        .pricing-left h1{
+            font-size: 50px;
+        }
+        .pricing-left p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 20px;
+            color: #555555;
+        }
+        .pricing-right{
+            width: 50%;
+            background-color: rgb(248, 245, 245);
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+        }
+        .pricing-right-box{
+            width: 350px;
+            background-color: rgb(251, 252, 252);
+            padding: 30px;
+        }
+        .pricing-right-box h1{
+            background-color: rgb(185, 225, 212);
+            text-align: center;
+        }
+        .pricing-right-box h2{
+            background-color: rgb(185, 225, 212);
+            text-align: center;
+        }
+        .pricing-right-box p{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+            color: #555555;
+        }
+        .pricing-right-box button{
+            color: rgb(248, 249, 250);
+            font-weight: bold;
+            background-color: blue;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 40px;
+            margin: 40px 0px 0px 55px;
+        }
+        .team{
+            background-color: rgb(245, 250, 250);
+            padding: 50px;
+        }
+        .team-top h1{
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+        }
+        .team-top p{
+            text-align: center;
+            font-size: 20px;
+            color: #555555;
+        }
+        .team-bottom{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 50px;
+        }
+        .team-bottom-box{
+            width: 300px;
+            background-color: rgb(253, 255, 255);
+            border-radius: 15px;
+        }
+        .team-bottom-box img{
+            width: 100%;
+            height: 280px;
+            border-radius: 15px;
+        }
+        .team-bottom-box h1{
+            text-align: center;
+            padding: 10px 0 5px 0;
+        }
+        .team-bottom-box p{
+            text-align: center;
+            color: #555555;
+        }
+        .team-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .team-icons a{
+            font-size: 30px;
+        }
+        .footer{
+            width: 100%;
+            background-color: rgb(91, 42, 137);
+        }
+        .footer1{
+            width: 100%;
+            display: flex;
+            gap: 90px;
+            justify-content: center;
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
+        .footer-bliss img{
+            padding: 5px;
+        }
+        .footer-bliss p{
+            color: white;
+            padding: 5px;
+        }
+        .footer-bliss-icons{
+            display: flex;
+            gap: 10px;
+        }
+        .footer-bliss-icons a{
+            font-size: 35px;
+            padding: 5px;
+        }
+        .footer-QL h1{
+            color: white;
+            padding-bottom: 20px;
+        }
+        .footer-QL a{
+            text-decoration: none;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+        }
+        .footer-S h1{
+            color: white;
+            padding-bottom: 20px;
+        }
+        .footer-S a{
+            text-decoration: none;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+        }
+        .footer-C h1{
+            color: white;
+            padding-bottom: 20px;
+        }
+        .footer-C p{
+            text-decoration: none;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            gap: 10px;
+        }
+        .footer2{
+            color: #848181;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-top: 1px solid #293141;
+            padding: 30px;
+            width: 100%;
+        }
+@media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(252, 248, 243);
+    }
+    .nav-btn{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        font-size: 30px;
+    }
+    .home{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .home-left{
+        width: 100%;
+        margin: 0;
+        padding: 50px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-left h2{
+        font-size: 40px;
+    }
+    .home-left p{
+        font-size: 20px;
+        text-align: center;
+        color: #555555;
+    }
+    .home-right{
+        width: 100%;
+
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 0;
+    }
+    .DA-con{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .DA-con-left{
+        margin: 0;
+        padding: 0;
+    }
+    .DA-con-left img{
+        width: 100%;
+    }
+    .DA-con-right{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .DA-con-right .DA-1{
+        width: 100%;
+        padding: 50px 20px;
+    }
+    .DA-1 h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .DA-1 p{
+        font-size: 20px;
+        text-align: center;
+        color: #555555;
+    }
+    .DA-con-right .DA-2{
+        margin: 0;
+        padding: 20px 0px;
+    }
+    .DA-2 p{
+        font-size: 20px;
+        color: #555555;
+    }
+    .our-service{
+        padding: 50px 0;
+    }
+    .our-1{
+        padding: 0;
+    }
+    .our-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Happy
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .Happy-left{
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+    .Happy-left1 h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .Happy-left1 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .Happy-left2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+        row-gap: 20px;
+    }
+    .Happy-right img{
+        width: 100%;
+    }
+    .Work{
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+    .Work-bottom{
+        padding: 30px 0 15px 0;
+    }
+    .John{
+        padding: 50px 0;
+        width: 100%;
+    }
+    .John-top img{
+        margin-left: 320px;
+    }
+    .John-top p{
+        font-size: 20px;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-left{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .project-left h1{
+        font-size: 35px;
+    }
+    .project-left p{
+        font-size: 20px;
+    }
+    .project-right{
+        display: flex;
+        justify-content: center;
+    }
+    .pricing{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .pricing-left{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .pricing-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+    .team-bottom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .footer{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer1{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+    }
+}
